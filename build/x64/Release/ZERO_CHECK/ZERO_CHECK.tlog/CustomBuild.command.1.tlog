@@ -1,0 +1,10 @@
+^C:\USERS\DELL\DOWNLOADS\121092885_HDR\HDR_PROJECT_ADNAN\HDR_IMAGING\BUILD\CMAKEFILES\25BAAFD5FEC3EB249C2878471D47C16C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dell/Downloads/121092885_HDR/HDR_Project_Adnan/HDR_imaging -BC:/Users/Dell/Downloads/121092885_HDR/HDR_Project_Adnan/HDR_imaging/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Dell/Downloads/121092885_HDR/HDR_Project_Adnan/HDR_imaging/build/HDR_Imaging_Cpp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
